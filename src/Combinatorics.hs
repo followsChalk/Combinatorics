@@ -18,3 +18,4 @@ f V_ i xs     = concatMap (flip fmap (f V_ (i-1) xs) . (:) ) xs
 c, c_, v, v_ :: (Eq a) =>  Int -> [a] -> [[a]]
 c = f C;      c_= f C_;      v = f V;      v_ = f V_
 
+
